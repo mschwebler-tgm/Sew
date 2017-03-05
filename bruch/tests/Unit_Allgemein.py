@@ -49,9 +49,9 @@ class TestAllgemein(unittest.TestCase):
         self.b2 = Bruch(3, 1)
         assert(str(self.b2) == '(3)')
 
-    def testPow(self):
-        h = 4
-        assert(self.b2 ** h == Bruch(self.b2.zaehler ** h, self.b2.nenner ** h))
+    #def testPow(self):
+    #    h = 4
+    #    assert(self.b2 ** h == Bruch(self.b2.zaehler ** h, self.b2.nenner ** h))
 
     def testPowError1(self):
         self.assertRaises(TypeError, self.b2.__pow__, 2.0)
